@@ -13,10 +13,10 @@ Run to detect image!
 
 ## you want to erase dependecy of Google_server
 
-> * cd ./node_modules/@tensorflow-models/coco-ssd/dist/    
-    
-> > *Swaped FileName coco-ssd.esm.js and coco-ssd.js in this project*    
-
+> * cd ./node_modules/@tensorflow-models/coco-ssd/dist/
+> > *Swaped FileName coco-ssd.esm.js and coco-ssd.js in this project*   
+      
+      
 > * vi coco-ssd.esm.js
 > * and modify address line 780
 > * back origin pwd, node ten.js.model_server/index.js
