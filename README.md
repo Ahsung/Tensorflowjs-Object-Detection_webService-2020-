@@ -20,4 +20,4 @@ Run to detect image!
 > * vi coco-ssd.esm.js
 > * and modify address line 780
 > * back origin pwd, node ten.js.model_server/index.js
-> > *modify correct port in ten.js.model_server/index.js *
+> > *modify correct port in ten.js.model_server/index.js*
