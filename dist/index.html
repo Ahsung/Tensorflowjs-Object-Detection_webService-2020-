@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<SCRIPT TYPE="TEXT/JAVASCRIPT">
+
+</SCRIPT>
+<body>
+<h1>Object Detection</h1>
+<input onchange="handleFiles(this)" type="file" id="inputImage" name="upload" value="select">
+<button type="button" id="run">Run</button>
+<div>
+  <img id="image" onload="resize(this)">
+  <canvas id="canvas" width="800" height="800"></canvas>
+  <canvas id="canvas2"></canvas>
+</div>
+</body>
+
+<script src="/demo.e31bb0bc.js"></script>
+<SCRIPT TYPE="TEXT/JAVASCRIPT">
+
+function handleFiles(fis) {
+  const file = fis.files[0];
+  const image = document.getElementById("image");
+  var url = URL.createObjectURL(file);
+  console.log("file url:",url);
+  image.src = url;
+}
+function resize(img) {
+  var temp = img.clientWidth;
+  if(img.clientWidth >600){
+    img.width = 600;
+  }
+  console.log(temp);
+}
+
+</SCRIPT>
+</html>
